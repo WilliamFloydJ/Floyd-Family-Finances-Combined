@@ -1,0 +1,352 @@
+.App {
+  margin: 0;
+  background-color: #d9bfe0;
+  display: flex;
+  min-height: 100vh;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.expense {
+  width: fit-content;
+  min-width: 10vw;
+  background-color: #5a5786;
+  box-shadow: #120d31 0.1vw 0.1vw 0.15vw;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5vw;
+  margin: 1vw;
+}
+
+.expense * {
+  background-color: #a57982;
+}
+
+.expense h2 {
+  margin: 0;
+  background-color: #a35c6a;
+}
+
+.money {
+  border-radius: 0.5vw 0 0 0.5vw;
+}
+
+.positive {
+  background-color: rgb(36, 80, 36) !important;
+}
+
+.negative {
+  background-color: #c53e59 !important;
+}
+
+.expense input {
+  box-shadow: inset #a57982 0.2vw 0.2vw 0.3vw;
+  background-color: #ce96a1;
+}
+
+#Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #302f4d;
+  padding: 5vw;
+  border-radius: 0 0 2.5vw 2.5vw;
+  box-shadow: #5a5786 0 0.5vw 0.5vw;
+}
+
+#Login > button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: #a57982;
+  color: #f0d3f7;
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 200;
+  font-size: 2vw;
+
+  margin-top: 2.5vw;
+  width: 50vw;
+  height: 6vw;
+  border-radius: 0.5vw;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  font-family: "IM Fell Great Primer", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 1vw 0 1vw 0;
+  background-color: #120d31;
+  border-radius: 0.5vw;
+  box-shadow: inset #5a5786 0.25vw 0.25vw 0.4vw;
+}
+
+form * {
+  padding: 0.75vw;
+}
+
+form > * {
+  background-color: #a57982;
+  color: #f0d3f7;
+  font-size: 1vw;
+  padding: 1.25vw;
+  text-shadow: #000000 0.1vw 0.1vw 0.2vw;
+  border: none;
+  border-radius: 0.75vw;
+  box-shadow: #5a5786 0.2vw 0.2vw 0.3vw, #a57982 0.25vw 0.25vw 0.4vw;
+}
+
+.createAccount > *:nth-child(2) {
+  border-radius: 0.75vw 0.75vw 0 0;
+}
+
+form > *:nth-child(2) {
+  width: 18vw;
+}
+
+form > *:first-child {
+  border-radius: 0.75vw 0.75vw 0 0;
+}
+form > *:last-child {
+  border-radius: 0 0 0.75vw 0.75vw;
+}
+
+form > * > input {
+  height: 1vw;
+  width: 10vw;
+  font-size: 1vw;
+  background-color: #a35c6a;
+  color: #f0d3f7;
+}
+form > * > input:hover {
+  background-color: #c4687a;
+  color: #f0d3f7;
+}
+form > input:hover {
+  background-color: #a35c6a;
+}
+
+.tooShort {
+  border-radius: 0 !important;
+}
+
+.slightlyTooShort {
+  border-radius: 0 0 0.75vw 0.75vw !important;
+}
+
+.tooLong {
+  border-radius: 0.75vw !important;
+}
+
+::placeholder {
+  color: #f0d3f7b0;
+}
+
+header {
+  background-color: #302f4d;
+  width: 99vw;
+  height: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: #5a5786 0 0.5vw 0.6vw;
+}
+header * {
+  margin: 0 1vw 0 1vw;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-size: 4vw;
+  color: #5a5786;
+}
+
+h1 {
+  background-color: #a57982;
+  color: #fdf4ff;
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 200;
+  font-size: 4.1vw;
+
+  width: 50vw;
+  height: 6vw;
+  border-radius: 0.5vw;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1Decoration {
+  box-shadow: inset #7e4c5f 0.2vw 0.2vw 0.4vw;
+  text-shadow: #7e4c5f 0.2vw 0.2vw 0.4vw;
+  height: fit-content;
+}
+
+.moneyOnHand {
+  margin: 0.5vw;
+}
+
+.CreationH1 {
+  width: fit-content;
+  font-size: 2vw;
+  padding: 0.75vw;
+  margin: 1vw;
+  box-shadow: #120d31 0.1vw 0.1vw 0.15vw;
+}
+
+img {
+  height: 90%;
+  width: auto;
+}
+
+.displayNone {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+ul {
+  padding: 1vw;
+  width: 50vw;
+  border-radius: 0.5vw;
+  display: flex;
+  justify-content: space-around;
+  background-color: #a35c6a;
+  list-style-type: none;
+}
+li > input {
+  font-size: 2.5vw;
+  font-family: "IM Fell Great Primer", serif;
+  background-color: #802739;
+  border-radius: 0.5vw;
+  color: white;
+  border: none;
+  box-shadow: #5a5786 0.2vw 0.2vw 0.4vw;
+}
+
+li > input:hover {
+  background-color: #9e4254;
+  cursor: pointer;
+}
+
+.expenseList {
+  width: fit-content;
+  display: flex !important;
+  flex-direction: column;
+  height: fit-content !important;
+}
+
+.expenseList h1,
+.expenseList input {
+  background-color: #302f4d;
+  width: fit-content;
+  height: 5vw;
+  padding: 0.5vw;
+  margin: 00.5vw;
+}
+
+h3 {
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 200;
+  text-align: center;
+  background-color: #302f4d;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5vw;
+  color: white;
+  padding: 1vw;
+  margin: 00.5vw;
+  border-radius: 0.5vw;
+}
+
+.inputForm input {
+  font-size: 2vw;
+  padding: 1vw;
+  color: white;
+  height: fit-content;
+  font-family: "IM Fell Great Primer", serif;
+}
+.inputForm {
+  box-shadow: none;
+  background-color: transparent;
+  flex-direction: row;
+  display: flex !important;
+  justify-content: center !important;
+}
+.inputForm > * {
+  box-shadow: none;
+  border-radius: 1vw !important;
+}
+.inputForm > *:hover {
+  background-color: #302f4d;
+}
+
+.expenseList li {
+  margin: 1vw;
+  min-width: 5vw;
+  padding: 0.8vw;
+  background-color: #5a5786;
+  border-radius: 0.5vw;
+}
+
+.Arrow {
+  margin-left: 1vw;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 0.2vw;
+  background-color: #3d3283;
+  box-shadow: inset #120d31 0.2vw 0.2vw 0.3vw;
+}
+
+.ArrowInActive {
+  background-color: #802739;
+}
+
+.Arrow:active {
+  background-color: #4f4781;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  width: fit-content;
+  max-width: 90vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.blank {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #302f4d inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
